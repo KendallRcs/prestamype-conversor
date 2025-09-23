@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ExchangeCard from '@/components/ExchangeCard.vue'
+
+</script>
 
 <template>
   <main class="min-h-screen bg-gradient-to-b from-[#4A28AF] to-[#6E46E6] flex items-center">
@@ -11,6 +14,7 @@
       </div>
 
       <div class="justify-self-center w-full max-w-md">
+        <ExchangeCard />
       </div>
     </section>
   </main>
