@@ -27,9 +27,10 @@ function onSwap() {
 </script>
 
 <template>
-  <div class="w-full max-w-md rounded-2xl bg-white shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
+  <div class="w-full max-w-none rounded-none bg-transparent shadow-none
+  md:max-w-md md:rounded-2xl bg-white md:shadow-[0_10px_25px_rgba(0,0,0,0.12)]">
     <div class="px-5 pt-4">
-      <div class="flex justify-center gap-10 md:gap-16 text-sm text-gray-600">
+      <div class="flex justify-center gap-10 md:gap-16 text-sm text-gray-600 pt-5">
         <div class="relative pb-2 overflow-hidden text-center">
           <span class="font-medium transition-colors duration-300" :class="s.isBuyActive ? 'text-[#4A28AF]' : 'text-gray-500'">
             <span class="block text-[12px]">Dólar compra</span>
@@ -58,8 +59,8 @@ function onSwap() {
     <div class="h-px bg-gray-200/80"></div>
 
     <div class="p-5">
-      <div class="relative space-y-3">
-        <div class="relative rounded-[10px] border border-[#6E46E6] overflow-hidden">
+      <div class="relative space-y-3 ">
+        <div class="relative rounded-[10px] border border-[#6E46E6] overflow-hidden ">
           <div class="grid grid-cols-[110px_1fr] items-stretch">
             <div class="bg-[#F2F1F7] text-[#6E46E6] text-[14px] grid place-items-center text-center px-4 py-2">
               {{ s.topLabel }}
